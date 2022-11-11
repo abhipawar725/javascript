@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <form action="">
+            <h2>Sign Up Form</h2>
+            <div class="field-area">
+                <label for="">Firstname</label>
+                <input type="text" id="firstname" name="firstname" onblur="fname_val();" onclick="fname_val_close();"><i
+                    class="fa fa-check" style="display: none;" id="fcheck"></i>
+            </div>
+            <div class="field-area">
+                <label for="">lastname</label>
+                <input type="text" id="lastname" name="lastname" onclick="fname_val();lname_val_close();"
+                    onblur="lname_val();uname_val();"><i class="fa fa-check" style="display: none;" id="lcheck"></i>
+            </div>
+            <div class="field-area">
+                <label for="">Mobile</label>
+                <input type="text" id="mobile" name="mobile" onclick="fname_val();lname_val();"
+                    onblur="mobile_val();"><i class="fa fa-check" style="display: none;" id="mcheck"></i>
+            </div>
+            <div class="field-area">
+                <label for="">Re-mobile</label>
+                <input type="text" id="remobile" name="remobile" onclick="fname_val();lname_val();" onblur="remobile_val();"><i
+                    class="fa fa-check" style="display: none;" id="rmcheck"></i>
+            </div>
+            <div class="field-area">
+                <label for="">email</label>
+                <input type="email" id="email" name="email" onclick="fname_val();lname_val();" oninput="email_val();"><i class="fa fa-check"
+                    style="display: none;" id="echeck"></i>
+                    <div id="email-hint" style="display: none;">
+                       <span id="gmail" onclick="gmail();">gmail.com</span>
+                       <span id="yahoo" onclick="yahoo();">yahoo.com</span>
+                    </div>
+            </div>
+            <div class="field-area">
+                <label for="">username</label>
+                <input type="text" id="username" name="username" onclick="fname_val();lname_val();"><i class="fa fa-check"
+                    style="display: none;" id="ucheck"></i>
+            </div>
+            <div class="field-area">
+                <label for="">password</label>
+                <input type="password" id="password" name="password" onclick="fname_val();lname_val();" oninput="submit_val();" onblur="password_val();"><i
+                    class="fa fa-check" style="display: none;" id="pcheck"></i>
+            </div>
+            <div class="field-area">
+                <input type="submit" value="Sign Up" id="submit" disabled="disabled">
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
