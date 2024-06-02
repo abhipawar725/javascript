@@ -1,0 +1,1 @@
+console.table([typeof "abhi", typeof 1234, typeof ["a","b","c"], typeof {firstname: "abhi", lastname: "panwar"}, typeof null, typeof undefined, typeof true])
